@@ -1,0 +1,1 @@
+<h1>Kaya</h1><input id='m'><button onclick='s()'>Send</button><p id='r'></p><script>function s(){fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:m.value})}).then(x=>x.json()).then(d=>r.innerText=d.reply)}</script>
